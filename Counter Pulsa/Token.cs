@@ -7,16 +7,14 @@ namespace Counter_Pulsa
 {
     class Token
     {
-        public int deposit;
-        public int depositTambah;
-        public int pulsaDibeli;
+        public int pulsaDibeli =0;
         public int pulsaJual;
         public int hargaPulsa = 0;
         public int laba = 0;
         ConsoleKeyInfo nomPulsa;
         public string nometer { get; set; }
         public string notoken { get; set; }
-        bool cek1, cek2, cek3 = true;
+        bool cek2= true;
 
         public Token()
         {
@@ -71,7 +69,9 @@ namespace Counter_Pulsa
 
                     Console.SetCursorPosition(5, 22); Console.WriteLine("harga jual    : {0} IDR",
                                      hargaPulsa.ToString());
-                    Console.SetCursorPosition(5, 23); Console.WriteLine("-----------------------------");
+                    
+                    Console.SetCursorPosition(5, 24); Console.WriteLine("-----------------------------");
+                
                 }
 
             public void detailToken()

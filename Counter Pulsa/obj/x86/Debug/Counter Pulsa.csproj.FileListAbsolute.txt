@@ -8,3 +8,8 @@ E:\hery\KULIAH\Sem 4\OoP\tugas\Counter Pulsa (1)\Counter Pulsa\Counter Pulsa\obj
 E:\hery\KULIAH\Sem 4\OoP\tugas\Counter Pulsa (1)\Counter Pulsa\Counter Pulsa\bin\Debug\Counter Pulsa.exe
 E:\hery\KULIAH\Sem 4\OoP\tugas\Counter Pulsa (1)\Counter Pulsa\Counter Pulsa\bin\Debug\Counter Pulsa.pdb
 E:\hery\KULIAH\Sem 4\OoP\tugas\Counter Pulsa (1)\Counter Pulsa\Counter Pulsa\obj\x86\Debug\Counter Pulsa.csprojResolveAssemblyReference.cache
+C:\Users\Winson Jung\counter\Counter Pulsa\obj\x86\Debug\Counter Pulsa.exe
+C:\Users\Winson Jung\counter\Counter Pulsa\obj\x86\Debug\Counter Pulsa.pdb
+C:\Users\Winson Jung\counter\Counter Pulsa\bin\Debug\Counter Pulsa.exe
+C:\Users\Winson Jung\counter\Counter Pulsa\bin\Debug\Counter Pulsa.pdb
+C:\Users\Winson Jung\counter\Counter Pulsa\obj\x86\Debug\Counter Pulsa.csprojResolveAssemblyReference.cache

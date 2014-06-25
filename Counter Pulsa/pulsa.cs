@@ -7,15 +7,13 @@ namespace Counter_Pulsa
 {
     class pulsa
     {
-        public int deposit;
-        public int depositTambah;
         public int pulsaDibeli;
         public int pulsaJual;
         public int hargaPulsa = 0;
         public int laba = 0;
         public string hp { get; set; }
         public jenisPulsa jenispulsa { get; set; }
-        bool cek1, cek2,cek3 = true;
+        bool cek2,cek1,cek3 = true;
 
         public enum jenisPulsa
         {
@@ -69,7 +67,7 @@ namespace Counter_Pulsa
                         { pulsaJual = pulsaDibeli + 1000; }
                         else { pulsaJual = pulsaDibeli + 500; }
 
-                        if ((int)jenispulsa == 1)
+                        if ((int)jenispulsa == 1 )
                         {
                             hargaPulsa = pulsaJual;
                         }
@@ -95,7 +93,8 @@ namespace Counter_Pulsa
                         }
                         Console.SetCursorPosition(5, 22); Console.WriteLine("harga jual    : {0} IDR",
                                          hargaPulsa.ToString());
-                        Console.SetCursorPosition(5, 23); Console.WriteLine("-----------------------------");
+                        Console.SetCursorPosition(5, 23); Console.WriteLine("Pengisian Pulsa berhasil silakan dengan nomor hp {0}",hp);
+                        Console.SetCursorPosition(5, 24); Console.WriteLine("---------------------------------------");
                     }
                 }
             }
@@ -111,6 +110,7 @@ namespace Counter_Pulsa
             }
             else
             {
+
                 Console.WriteLine("{0} {1} [{2}]", jenispulsa, pulsaDibeli, hp);
             }
         }
