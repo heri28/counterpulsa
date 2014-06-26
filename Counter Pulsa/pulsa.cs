@@ -13,7 +13,7 @@ namespace Counter_Pulsa
         public int laba = 0;
         public string hp { get; set; }
         public jenisPulsa jenispulsa { get; set; }
-        bool cek2,cek1,cek3 = true;
+        bool cek1 = true;
 
         public enum jenisPulsa
         {
@@ -38,31 +38,33 @@ namespace Counter_Pulsa
             {
                 do
                 {
-                    cek2 = true;
-                    Console.WriteLine("\n\tMasukkan Nomor HP : ");
+                    
+                    Console.WriteLine();
+                    Console.Write("\tMasukkan Nomor HP : ");
                     hp = Console.ReadLine();
+                    if (hp.Length <= 9 || hp.Length >= 13 || hp == null)
+                    {
+                        Console.WriteLine("\tNomor HP error, Periksa Nomor HP");
+                    }
                 } while (hp.Length <= 9 || hp.Length >= 13 || hp == null);
-                if (hp.Length <= 9 || hp.Length >= 13 || hp == null)
-                {
-                    Console.WriteLine("\tNomor HP error, Periksa Nomor HP");
-                }
-                else
-                {
+                
                     do
                     {
-                        cek3 = true;
-                        Console.SetCursorPosition(5, 21); Console.Write("Nominal Pulsa : ");
+
+                        Console.WriteLine();
+                        Console.Write("\tNominal Pulsa : ");
                         pulsaDibeli = Convert.ToInt32(Console.ReadLine());
-                    } while (cek3 == false);
-                    if (pulsaDibeli != 5000 && pulsaDibeli != 10000 && pulsaDibeli != 20000
+                        if (pulsaDibeli != 5000 && pulsaDibeli != 10000 && pulsaDibeli != 20000
                         && pulsaDibeli != 50000 && pulsaDibeli != 100000)
-                    {
-                        Console.WriteLine("Pulsa tidak tersedia !");
-                        Console.WriteLine("Hanya tersedia pulsa 5000, 10000, 20000, 50000, 100000");
-                        cek3 = false;
-                    }
-                    else
-                    {
+                        {
+                            Console.WriteLine("\tPulsa tidak tersedia !");
+                            Console.WriteLine("\tHanya tersedia pulsa 5000, 10000, 20000, 50000, 100000");
+
+                        }
+                    } while (pulsaDibeli != 5000 && pulsaDibeli != 10000 && pulsaDibeli != 20000
+                        && pulsaDibeli != 50000 && pulsaDibeli != 100000);
+
+                    
                         if (pulsaDibeli <= 25000)
                         { pulsaJual = pulsaDibeli + 1000; }
                         else { pulsaJual = pulsaDibeli + 500; }
@@ -91,12 +93,12 @@ namespace Counter_Pulsa
                         {
                             hargaPulsa = pulsaJual + 500;
                         }
-                        Console.SetCursorPosition(5, 22); Console.WriteLine("harga jual    : {0} IDR",
+                        Console.WriteLine("\tharga jual    : {0} IDR",
                                          hargaPulsa.ToString());
-                        Console.SetCursorPosition(5, 23); Console.WriteLine("Pengisian Pulsa berhasil silakan dengan nomor hp {0}",hp);
-                        Console.SetCursorPosition(5, 24); Console.WriteLine("---------------------------------------");
-                    }
-                }
+                        Console.WriteLine("\nPengisian Pulsa berhasil silakan dengan nomor hp {0}",hp);
+                        Console.WriteLine("\n----------------------------------------------------");
+                    
+                
             }
         }
 

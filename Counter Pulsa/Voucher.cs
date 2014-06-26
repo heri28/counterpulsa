@@ -15,7 +15,7 @@ namespace Counter_Pulsa
         public jenisVoucher jenisvoucher { get; set; }
         public int voucherdibeli {get; set;}
         public string novoucher;
-        bool cek,cek1 = true;
+        bool cek,cek1= true;
 
         public Voucher()
         {
@@ -25,10 +25,12 @@ namespace Counter_Pulsa
             novoucher = Convert.ToString(angka + angka1 + 9999999);
             do
             {
-                cek1 = true;
-                Console.SetCursorPosition(5, 17); Console.Write("Jenis voucher yang dibeli : ");
+                Console.WriteLine();
+                Console.Write("Jenis voucher yang dibeli : ");
                 jenisvoucher = (jenisVoucher)int.Parse(Console.ReadLine());
-            } while (cek1 == false);
+            } while ((int)jenisvoucher != 1 && (int)jenisvoucher != 2 && (int)jenisvoucher != 3 && (int)jenisvoucher != 4
+                && (int)jenisvoucher != 5 && (int)jenisvoucher != 6);
+
             if ((int)jenisvoucher != 1 && (int)jenisvoucher != 2 && (int)jenisvoucher != 3 && (int)jenisvoucher != 4
                 && (int)jenisvoucher != 5 && (int)jenisvoucher != 6)
             {
