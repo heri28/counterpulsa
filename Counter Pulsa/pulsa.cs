@@ -39,9 +39,9 @@ namespace Counter_Pulsa
                 do
                 {
                     cek2 = true;
-                    Console.SetCursorPosition(5, 19); Console.Write("Masukkan Nomor HP : ");
+                    Console.WriteLine("\n\tMasukkan Nomor HP : ");
                     hp = Console.ReadLine();
-                } while (cek2 == false);
+                } while (hp.Length <= 9 || hp.Length >= 13 || hp == null);
                 if (hp.Length <= 9 || hp.Length >= 13 || hp == null)
                 {
                     Console.WriteLine("\tNomor HP error, Periksa Nomor HP");
