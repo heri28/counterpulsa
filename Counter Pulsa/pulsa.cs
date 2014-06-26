@@ -25,10 +25,10 @@ namespace Counter_Pulsa
         {
             do
             {
-                cek1 = true;
+
                 Console.SetCursorPosition(5, 17); Console.Write("Jenis pulsa yang dibeli : ");
                 jenispulsa = (jenisPulsa)int.Parse(Console.ReadLine());
-            } while (cek1 == false);
+            } while ((int)jenispulsa  > 7 && (int)jenispulsa > 0);
             if ((int)jenispulsa == 0)
             {
                 cek1 = false;
