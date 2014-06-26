@@ -65,11 +65,13 @@ namespace Counter_Pulsa
                         && pulsaDibeli != 50000 && pulsaDibeli != 100000);
 
                     
+
                         if (pulsaDibeli <= 25000)
                         { pulsaJual = pulsaDibeli + 1000; }
-                        else { pulsaJual = pulsaDibeli + 500; }
+                        else 
+                        { pulsaJual = pulsaDibeli + 500; }
 
-                        if ((int)jenispulsa == 1 )
+                        if ((int)jenispulsa == 1)
                         {
                             hargaPulsa = pulsaJual;
                         }
@@ -93,9 +95,10 @@ namespace Counter_Pulsa
                         {
                             hargaPulsa = pulsaJual + 500;
                         }
+                        
                         Console.WriteLine("\tharga jual    : {0} IDR",
                                          hargaPulsa.ToString());
-                        Console.WriteLine("\nPengisian Pulsa berhasil silakan dengan nomor hp {0}",hp);
+                        Console.WriteLine("\nPengisian Pulsa berhasil silakan dengan nomor hp {0}", hp);
                         Console.WriteLine("\n----------------------------------------------------");
                     
                 

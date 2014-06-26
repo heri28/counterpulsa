@@ -41,7 +41,7 @@ namespace Counter_Pulsa
                             Console.SetCursorPosition(50, 9); Console.WriteLine("4.IM3");
                             Console.SetCursorPosition(50, 11); Console.WriteLine("5.MENTARI");
                             Console.SetCursorPosition(50, 13); Console.WriteLine("6.AXIS");
-                            Console.SetCursorPosition(50, 15); Console.WriteLine("0.KEMBALI");
+                            
                             stock.jualPulsa();
                             Console.ReadKey();
                             //}
