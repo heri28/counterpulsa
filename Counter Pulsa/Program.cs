@@ -9,14 +9,6 @@ namespace Counter_Pulsa
     {
         static void utama()
         {
-            //int deposit;
-            //int depositTambah;
-            //int pulsaDibeli;
-            //int pulsaJual;
-            //int hargaPulsa = 0;
-            //int laba = 0;
-            //string hp;
-
             Stock stock = new Stock();
             Console.Clear();
             bool cek = true;
@@ -44,7 +36,7 @@ namespace Counter_Pulsa
                             
                             stock.jualPulsa();
                             Console.ReadKey();
-                            //}
+                            
                         break;
 
                     case "2":
