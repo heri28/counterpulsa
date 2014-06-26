@@ -9,7 +9,7 @@ namespace Counter_Pulsa
     {
         public enum jenisVoucher
         {
-            nol, AS, SIMPATI, XL, IM3, MENTARI, AXIS
+            nol, AS, SIMPATI, XL, IM3, MENTARI, AXIS 
         }
 
         public jenisVoucher jenisvoucher { get; set; }
